@@ -1,0 +1,130 @@
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: hsl(208, 62%, 69%);
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        label {
+            margin-bottom: 10px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        input[type="reset"] {
+            background-color: #f44336;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="reset"]:hover {
+            background-color: #da190b;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        input[type="radio"] + label {
+            margin-right: 15px;
+        }
+        input[type="radio"]:checked + label {
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Registration Form</h1>
+
+<form action="Full name">
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <label for="Age">Age:</label>
+    <input type="number" id="Age" name="Age" required>
+    <label for="gender">Gender:</label>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female" required>
+    <label for="female">Female</label>
+    <br>
+    <br>
+    <label for="Programming of interest">Programming Languages of Interest:</label>
+    <br>
+    <label for="python">Python </label>
+    <input type="checkbox" id="python" name="programming-languages" value="python">
+    <br>
+    <label for="java">Java </label>
+    <input type="checkbox" id="java" name="programming-languages" value="java">
+    <br>
+    <label for="cpp">C++ </label>
+    <input type="checkbox" id="cpp" name="programming-languages" value="cpp">
+    <br>
+    <label for="javascript">JavaScript </label>
+    <input type="checkbox" id="javascript" name="programming-languages" value="javascript">
+    <br>
+    <p> Choose Your Preferred Workshop:</p>
+    <select name="workshop" required>
+        <option value="" disabled selected>Preferred Workshop</option>
+        <option value="web-development">Web Development</option>
+        <option value="mobile-apps">Mobile Development</option>
+        <option value="data-science">Artificial Intelligence</option>
+        <option value="game-development">Cybersecurity</option>
+    </select>
+    <br>
+    <br>
+    <label for="date">Preferred Date:</label>
+    <input type="date" id="date" name="date" required>
+    <br>
+    <br>
+    <textarea name="message" rows="4" cols="50" placeholder="Please Leave a Message..."></textarea>
+    <br>
+    <br>
+    <input type="submit" value="Register">
+    <input type="reset" value="Reset">
+</form>
+
+</body>
+
+</html>
